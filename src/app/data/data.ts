@@ -26,6 +26,7 @@ export type IProject = {
   client: string;
   duration: string;
   attachment: string[];
+  tech: string[];
 };
 
 export const EXPERIENCES: IExperience[] = [
@@ -97,6 +98,14 @@ export const PROJECTS: IProject[] = [
       "Docker",
     ],
     attachment: ["/uve-stocks.png"],
+    tech: [
+      "/tech/nextjs.png",
+      "/tech/nestjs.jpeg",
+      "/tech/prisma.png",
+      "/tech/sentry.png",
+      "/tech/postgressql.png",
+      "/tech/docker_container.png",
+    ],
   },
   {
     name: "Marketing Page UI",
@@ -104,6 +113,7 @@ export const PROJECTS: IProject[] = [
     duration: "2022",
     technologies: ["Figma"],
     attachment: ["/rebornIT.png"],
+    tech: ["/tech/figma.png"],
   },
   {
     name: "Avengers Cafe - Mobile Application",
@@ -111,6 +121,7 @@ export const PROJECTS: IProject[] = [
     duration: "2022",
     technologies: ["Apache Cordova", "React Js", "Figma"],
     attachment: ["/avengers-cafe.png"],
+    tech: ["/tech/react.png", "/tech/cordova.png", "/tech/figma.png"],
   },
 ];
 

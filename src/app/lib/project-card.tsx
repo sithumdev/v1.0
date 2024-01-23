@@ -8,7 +8,7 @@ type IProjectCard = {
 };
 
 export default function ProjectCard({
-  project: { name, client, duration, technologies, attachment },
+  project: { name, client, duration, technologies, attachment, tech },
   css,
 }: IProjectCard) {
   return (
@@ -33,6 +33,19 @@ export default function ProjectCard({
           className="object-cover"
         />
       ))}
+
+      <div className="flex flex-wrap gap-4 flex-1">
+        {tech.map((technology) => (
+          <Image
+            key={technology}
+            src={technology}
+            width="80"
+            height="100"
+            alt={technology}
+            className="object-contain"
+          />
+        ))}
+      </div>
     </div>
   );
 }
