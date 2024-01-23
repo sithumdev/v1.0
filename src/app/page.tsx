@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { AboutMe, Certificates, Header, Hero, Projects, Services } from "./lib";
 
 export default function Home() {

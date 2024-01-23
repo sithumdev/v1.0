@@ -3,7 +3,7 @@ import { GALLERY } from "../data/data";
 
 export default function AboutMe() {
   return (
-    <div className="mt-10">
+    <div className="mt-10" id="aboutme">
       <hr className="my-5" />
 
       <div>

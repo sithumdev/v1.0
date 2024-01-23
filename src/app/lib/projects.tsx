@@ -3,7 +3,7 @@ import ProjectCard from "./project-card";
 
 export default function Projects() {
   return (
-    <div className="mt-10">
+    <div className="mt-10" id="projects">
       <hr className="my-5" />
       <div>
         <h4 className="text-2xl mb-5">Projects</h4>

@@ -25,8 +25,8 @@ export default function CertificateCard({
         alt={name}
         className="object-cover"
       />
-      <h2 className="text-lg font-semibold">{name}</h2>
-      <p className="text-sm mt-1">
+      <h2 className="text-sm lg:text-lg font-semibold">{name}</h2>
+      <p className="text-xs lg:text-sm mt-1">
         {institute} - {year}
       </p>
     </div>

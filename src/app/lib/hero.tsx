@@ -21,7 +21,7 @@ export default function Hero() {
             width="50"
             height="50"
             alt="Docker"
-            className="object-cover absolute -top-10 -left-14 z-50"
+            className="object-cover absolute -top-10 left-0 lg:-left-14 z-50"
           />
 
           <Image
@@ -37,7 +37,7 @@ export default function Hero() {
             width="60"
             height="60"
             alt="Docker"
-            className="object-cover absolute top-20 -left-28 z-50"
+            className="object-cover absolute top-56 lg:top-20 -left-10 lg:-left-28 z-50 scale-75 lg:scale-100"
           />
         </div>
         <h2 className="text-2xl mt-2">I&apos;m Sithum Basnayaka</h2>
