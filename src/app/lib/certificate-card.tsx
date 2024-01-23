@@ -14,7 +14,7 @@ export default function CertificateCard({
   return (
     <div
       className={clsx(
-        "flex items-center gap-5 px-4 py-5 border rounded-full",
+        "flex items-center gap-5 px-4 py-5 border rounded-full min-h-[6rem]",
         css
       )}
     >

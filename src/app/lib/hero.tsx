@@ -6,7 +6,7 @@ import { EXPERIENCES } from "../data/data";
 export default function Hero() {
   return (
     <section className="grid grid-cols-2 mt-10 place-items-center">
-      <div className="col-span-2 lg:col-span-1">
+      <div className="col-span-2 lg:col-span-1 relative">
         <div className="overflow-hidden rounded-full border w-72 h-72 object-fit">
           <Image
             src="/me.jpeg"
@@ -14,6 +14,30 @@ export default function Hero() {
             height="500"
             alt="Sithum Basnayaka"
             className="object-cover"
+          />
+
+          <Image
+            src="/docker.png"
+            width="50"
+            height="50"
+            alt="Docker"
+            className="object-cover absolute -top-10 -left-14 z-50"
+          />
+
+          <Image
+            src="/typescript.png"
+            width="30"
+            height="30"
+            alt="Docker"
+            className="object-cover absolute -top-10 right-0 z-50"
+          />
+
+          <Image
+            src="/github.png"
+            width="60"
+            height="60"
+            alt="Docker"
+            className="object-cover absolute top-20 -left-28 z-50"
           />
         </div>
         <h2 className="text-2xl mt-2">I&apos;m Sithum Basnayaka</h2>
