@@ -7,6 +7,13 @@ export type IExperience = {
   image: string;
 };
 
+export type IService = {
+  service: string;
+  description: string;
+  clients: number;
+  image: string;
+};
+
 export type IGallery = {
   image: string;
   description: string;
@@ -140,5 +147,22 @@ export const GALLERY: IGallery[] = [
     image: "/aboutme/galle.png",
     title: "Lipton Seat",
     description: "",
+  },
+];
+
+export const SERVICES: IService[] = [
+  {
+    service: "Web Development",
+    description:
+      "Crafting websites: Turning ideas into immersive digital experiences.",
+    clients: 5,
+    image: "/web.svg",
+  },
+  {
+    service: "UI/UX Development",
+    description:
+      "Designing delightful websites for a user-friendly and engaging digital experience.",
+    clients: 10,
+    image: "/ux.svg",
   },
 ];

@@ -5,3 +5,5 @@ export { default as Certificates } from "./certificates";
 export { default as CertificateCard } from "./certificate-card";
 export { default as Projects } from "./projects";
 export { default as AboutMe } from "./about-me";
+export { default as Services } from "./services";
+export { default as ServiceCard } from "./service-card";
