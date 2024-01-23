@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { ICertificate } from "../data/data";
+import Image from "next/image";
 
 type ICertificateCard = {
   certificate: ICertificate;
@@ -17,6 +18,13 @@ export default function CertificateCard({
         css
       )}
     >
+      <Image
+        src={image}
+        width="50"
+        height="50"
+        alt={name}
+        className="object-cover"
+      />
       <h2 className="text-lg font-semibold">{name}</h2>
       <p className="text-sm mt-1">
         {institute} - {year}
