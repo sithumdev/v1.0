@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Certificates, Header, Hero, Projects } from "./lib";
+import { AboutMe, Certificates, Header, Hero, Projects } from "./lib";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Certificates />
+      <AboutMe />
     </main>
   );
 }

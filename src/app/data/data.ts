@@ -7,6 +7,12 @@ export type IExperience = {
   image: string;
 };
 
+export type IGallery = {
+  image: string;
+  description: string;
+  title: string;
+};
+
 export type ICertificate = {
   name: string;
   institute: string;
@@ -19,6 +25,7 @@ export type IProject = {
   technologies: string[];
   client: string;
   duration: string;
+  attachment: string[];
 };
 
 export const EXPERIENCES: IExperience[] = [
@@ -89,5 +96,38 @@ export const PROJECTS: IProject[] = [
       "CI/CD",
       "Docker",
     ],
+    attachment: ["/uve-stocks.png"],
+  },
+  {
+    name: "Marketing Page UI",
+    client: "RebornIT",
+    duration: "2022",
+    technologies: ["Figma"],
+    attachment: ["/rebornIT.png"],
+  },
+  {
+    name: "Avengers Cafe - Mobile Application",
+    client: "Avengers Cafe",
+    duration: "2022",
+    technologies: ["Apache Cordova", "React Js", "Figma"],
+    attachment: ["/avengers-cafe.png"],
+  },
+];
+
+export const GALLERY: IGallery[] = [
+  {
+    image: "/aboutme/nuwara-eliya.png",
+    title: "Lipton Seat",
+    description: "",
+  },
+  {
+    image: "/aboutme/devils-staircase.png",
+    title: "Lipton Seat",
+    description: "",
+  },
+  {
+    image: "/aboutme/galle.png",
+    title: "Lipton Seat",
+    description: "",
   },
 ];
