@@ -90,6 +90,33 @@ export const CERTIFICATES: ICertificate[] = [
 
 export const PROJECTS: IProject[] = [
   {
+    name: "Rack",
+    client: "UVE Eagle Confectioneries",
+    duration: "2024 - Present",
+    technologies: [
+      "Next Js",
+      "Prisma ORM",
+      "PostgresSQL",
+      "Supabase",
+      "Sentry",
+      "REST API",
+      "CI/CD",
+      "Docker",
+    ],
+    attachment: [
+      "/projects/rack/1.png",
+      "/projects/rack/2.png",
+      "/projects/rack/3.png",
+    ],
+    tech: [
+      "/tech/nextjs.png",
+      "/tech/prisma.png",
+      "/tech/sentry.png",
+      "/tech/postgressql.png",
+      "/tech/docker_container.png",
+    ],
+  },
+  {
     name: "UVE Stocks",
     client: "UVE Eagle Confectioneries",
     duration: "2023 - Present",
