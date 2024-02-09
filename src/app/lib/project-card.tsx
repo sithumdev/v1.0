@@ -23,16 +23,18 @@ export default function ProjectCard({
         {client} - {duration}
       </p>
 
-      {attachment.map((attachment) => (
-        <Image
-          key={attachment}
-          src={attachment}
-          width="500"
-          height="375"
-          alt={name}
-          className="object-cover"
-        />
-      ))}
+      <div className="grid grid-cols-2 gap-2">
+        {attachment.map((attachment) => (
+          <Image
+            key={attachment}
+            src={attachment}
+            width="500"
+            height="375"
+            alt={name}
+            className="object-cover"
+          />
+        ))}
+      </div>
 
       <div className="flex flex-wrap gap-4 flex-1">
         {tech.map((technology) => (

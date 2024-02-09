@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { GALLERY } from "../data/data";
+import { GALLERY, PERSONAL_DETAILS } from "../data/data";
 
 export default function AboutMe() {
   return (
@@ -9,13 +9,13 @@ export default function AboutMe() {
       <div>
         <h4 className="text-2xl mb-5">About Me</h4>
         <p className="mt-5">
-          Hola!, I&apos;m Sithum Basnayaka, a jet-setting Full Stack Developer
-          from Sri Lanka. Coding maestro by day, wanderer by choice. From
-          front-end finesse to back-end brilliance, I craft digital wonders.
-          Whether conquering code or exploring new realms, I&apos;m your go-to
-          guy. Let&apos;s turn challenges into victories, all while chasing
-          horizons in cozy coding spaces. Join me on this journey – one line of
-          code at a time! 👨‍💻✈️🌍
+          Hola!, I&apos;m {PERSONAL_DETAILS.name}, a jet-setting Full Stack
+          Developer from Sri Lanka. Coding maestro by day, wanderer by choice.
+          From front-end finesse to back-end brilliance, I craft digital
+          wonders. Whether conquering code or exploring new realms, I&apos;m
+          your go-to guy. Let&apos;s turn challenges into victories, all while
+          chasing horizons in cozy coding spaces. Join me on this journey – one
+          line of code at a time! 👨‍💻✈️🌍
         </p>
 
         <div className="grid grid-cols-3 gap-2 mt-12">

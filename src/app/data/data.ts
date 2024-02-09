@@ -1,3 +1,10 @@
+export type IPersonalDetails = {
+  name: string;
+  email: string;
+  phone: string;
+  linkedin: string;
+};
+
 export type IExperience = {
   role: string;
   organization: string;
@@ -34,6 +41,13 @@ export type IProject = {
   duration: string;
   attachment: string[];
   tech: string[];
+};
+
+export const PERSONAL_DETAILS: IPersonalDetails = {
+  email: "sithum.dashantha@gmail.com",
+  phone: "+94766108500",
+  name: "Sithum Basnayaka",
+  linkedin: "https://www.linkedin.com/in/sithum-basnayaka/",
 };
 
 export const EXPERIENCES: IExperience[] = [
@@ -138,6 +152,27 @@ export const PROJECTS: IProject[] = [
       "/tech/nodejs.png",
       "/tech/mongodb.png",
       "/tech/firebase.png",
+    ],
+  },
+  {
+    name: "Toucan (Project Management SaaS Application)",
+    client: "Toucan UK",
+    duration: "2023 October - 2023 Novemeber",
+    technologies: [
+      "React Js",
+      "Material UI",
+      "Redux Js",
+      "Node Js",
+      "MongoDB",
+      "REST API",
+      "POSTMAN",
+    ],
+    attachment: ["/projects/toucan/1.jpeg"],
+    tech: [
+      "/tech/react.png",
+      "/tech/nodejs.png",
+      "/tech/mongodb.png",
+      "/tech/redux.png",
     ],
   },
   {

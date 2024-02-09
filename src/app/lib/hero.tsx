@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button } from "../components";
+import Link from "next/link";
 import { ExperienceCard } from ".";
-import { EXPERIENCES } from "../data/data";
+import { EXPERIENCES, PERSONAL_DETAILS } from "../data/data";
 
 export default function Hero() {
   return (
@@ -9,10 +9,10 @@ export default function Hero() {
       <div className="col-span-2 lg:col-span-1 relative">
         <div className="overflow-hidden rounded-full border w-72 h-72 object-fit">
           <Image
-            src="/me.jpeg"
+            src="/me2.jpeg"
             width="500"
             height="500"
-            alt="Sithum Basnayaka"
+            alt={PERSONAL_DETAILS.name}
             className="object-cover"
           />
 
@@ -40,7 +40,7 @@ export default function Hero() {
             className="object-cover absolute top-56 lg:top-20 -left-10 lg:-left-28 z-50 scale-75 lg:scale-100"
           />
         </div>
-        <h2 className="text-2xl mt-2">I&apos;m Sithum Basnayaka</h2>
+        <h2 className="text-2xl mt-2">I&apos;m {PERSONAL_DETAILS.name}</h2>
         <p className="mt-1">Full stack developer, Based in Sri Lanka</p>
       </div>
 
@@ -49,9 +49,13 @@ export default function Hero() {
           Transforming Challenges into Code: Unleashing the Power of Full Stack
           Development
         </h3>
-        <Button css="mt-5" isActive>
+        <br className="mt-5" />
+        <Link
+          href={`mailto:${PERSONAL_DETAILS.email}`}
+          className="bg-black border-black text-white hover:bg-transparent hover:text-black rounded-full px-6 py-4 transition-colors duration-500"
+        >
           Let&apos;s Talk
-        </Button>
+        </Link>
 
         <hr className="my-5" />
 

@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { PERSONAL_DETAILS } from "./data/data";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sithum Basnayaka",
+  title: PERSONAL_DETAILS.name,
   description: "Made with love",
 };
 
